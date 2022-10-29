@@ -1,18 +1,14 @@
 # Disaster Response Pipeline Project
 ## UDACITY - Data Science Nanodegree
 
-Table of Content
+### Table of Content
 1. [Description](#description)
 2. [Project Motivation](#Motivation)
-2. [Components](#project_components)
-    - [ETL Pipeline](#etl)
-    - [ML Pipeline](#ml_pipeline)
-    - [Flask Web App](#flask)
-3. [Getting Started](#getting_started)
-    - [Dependencies](#dependencies)
-    - [Installing](#installing)
+3. [Folder Discription](#Folder)
+4. [Getting Started](#getting)
+    - [Libraries](#libraries)
     - [Instructions](#instructions)
-4. [File Description](#file)
+4. [Results](#result)
 5. [Licensing, Authors, and Acknowledgements](#Licensing)
 
 <a name="description"></a>
@@ -27,17 +23,65 @@ This project is divided in the following key sections:
 - Build a machine learning pipeline to train the which can classify text message in various categories
 - Run a web app which can show model results in real time
 
-<a name="Motivation"></a>
+<a name="Folder"></a>
+## Folder Discription
+
+         disaster-response-pipeline
+          |-- app
+                |-- templates
+                        |-- go.html # main page of web app
+                        |-- master.html # classification result page of web app
+                |-- run.py # Flask file that runs app
+          |-- data                
+                |-- DisasterResponse.db # clean database 
+                |-- categories.csv # data to process 
+                |-- message.csv # data to process
+                |-- process_data.py
+          |-- models
+                |-- classifier.rar (classifier.pkl) # saved model in pickle
+                |-- train_classifier.py
+          |-- image     
+          |-- README
+
+<a name="getting"></a>
+## Getting Started
+
+<a name="libraries"></a>
+### Libraries
+The libraries I used for this project were:
+- Python 3.
+- Machine Learning Libraries: NumPy, SciPy, Pandas, Sciki-Learn
+- Natural Language Process Libraries: NLTK
+- SQLlite Database Libraqries: SQLalchemy
+- Model Loading and Saving Library: Pickle
+- Web App and Data Visualization: Flask, Plotly
+- etc
+
+You will also need to have software installed to run and execute an iPython Notebook
+
+<a name="instructions"></a>
 ### Instructions:
-1. Run the following commands in the project's root directory to set up your database and model.
+    1. Run the following commands in the project's root directory to set up your database and model.
 
-    - To run ETL pipeline that cleans data and stores in database
-        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
-    - To run ML pipeline that trains classifier and saves
-        `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+          - To run ETL pipeline that cleans data and stores in database
+            `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
+          - To run ML pipeline that trains classifier and saves
+             `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
 
-2. Run the following command in the app's directory to run your web app.
-    `python run.py`
+    2. Run the following command in the app's directory to run your web app.
+         `python run.py`
 
-3. Go to http://0.0.0.0:3001/
-# Disaster-Response-Pipeline
+    3. Go to http://0.0.0.0:3001/
+
+## Results<a name="result"></a>
+Below are a few screenshots of the web app.
+![web app 1](https://prnt.sc/ZvyS9ZvLB2t6)
+![web app 2}(https://prnt.sc/DU3sXvszV1d6)
+![web app 3](https://prnt.sc/iLEWvdRSVGzG)
+
+## Licensing, Authors, and Acknowledgements<a name="Licensing"></a>
+-
+
+## Thanks to 
+![logo.png](http://pra-dan.github.io/img/udacimak/logo.png)
+![Attached_to_figure-eight-dot-com](https://upload.wikimedia.org/wikipedia/en/a/a6/Attached_to_figure-eight-dot-com.png)
