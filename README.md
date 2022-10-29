@@ -75,9 +75,9 @@ You will also need to have software installed to run and execute an iPython Note
 
 ## Results<a name="result"></a>
 Below are a few screenshots of the web app.
-![web app 1](https://prnt.sc/ZvyS9ZvLB2t6)
-![web app 2}(https://prnt.sc/DU3sXvszV1d6)
-![web app 3](https://prnt.sc/iLEWvdRSVGzG)
+![web app 1](https://github.com/Sesil01/Udacity---Disaster-Pipeline-Project/blob/main/Image/web%20app%201.png?raw=true)
+![web app 2](https://github.com/Sesil01/Udacity---Disaster-Pipeline-Project/blob/main/Image/web%20app%202.png?raw=true)
+![web app 3](https://github.com/Sesil01/Udacity---Disaster-Pipeline-Project/blob/main/Image/web%20app%203.png?raw=true)
 
 ## Licensing, Authors, and Acknowledgements<a name="Licensing"></a>
 -
